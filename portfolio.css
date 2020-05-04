@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: darkslateblue;
+}
+html{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    position: fixed;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.span{
+    display: block;
+    background-color: red;
+    width: 30px;
+    height: 5px;
+    margin: 0 0 2px 0;
+    border-radius: 2em;
+    cursor: pointer;
+}
+#navbar:hover #dropdown{
+    display: block !important;
+}
+#dropdown{
+    background-color: black;
+    display: none;
+}
+#dropdown ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#dropdown ul li{
+    font-size: 1.5em;
+    border-bottom: solid 2px gray;
+    text-align: center;
+    padding: 5px;
+}
+#dropdown ul li:hover{
+    background-color: #ff0000e3;
+}
+#dropdown ul li:hover a{
+    color: black !important;
+}
+#dropdown a{
+    text-decoration: none;
+    color: #ff0000e3;
+    font-weight: bold;
+}
+#welcome-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #252222;
+    color: #ff0000e3;
+    height: 100vh;
+}
+#welcome-section h1{
+    font-size: 3em;
+}
+#welcome-section p{
+    font-size: 2em;
+}
+#projects{
+    margin-bottom: 10%;
+    padding: 10px;
+}
+.project-tile{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2%;
+    justify-content: center;
+}
+#work{
+    width: 40%;
+    margin-left: 25%;
+    color: #ff0000e3;
+    text-align: center;
+    font-size: 2.5em;
+    border-bottom: solid 2px darkred;
+}
+#projects a{
+    background-color: #252222;
+    width: 90%;
+    margin-left: 2%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+.project-image{
+    width: 100%;
+    height: auto;
+}
+.project-tile p:hover{
+    transform: scale(1.1);
+    color: #ff0000e3;
+}
+#contact{
+    width: 100%;
+    background-color: #252222;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+#profile-lin a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+
+}
+#profile-lin a p{
+    margin: 0;
+    font-size: 1em;
+}
+#profile-lin a p:hover span{
+    color: #ff0000e3;
+    font-weight: bolder;
+}
+#profile-lin a:hover{
+    transform: scale(1.2);
+}
+#profile-lin p{
+    font-size: 1.5em;
+}
+@media (max-width: 650px){
+    #projects {
+        margin-bottom: 150px;
+    }
+}
